@@ -1,7 +1,34 @@
   ## Project 3
+## Project 3
   
-This project involves in-depth analyzing flight data to derive insights into various aspects such as popular routes, busiest airports, top airlines, and more. The dataset, stored in an SQLite database, contains information about flights, including details like airline names, routes, cities, and flight counts.
+This project involves an in-depth analysis of flights coming out of Australia from the most popular airports. This tool can be used by travelers and the aviation industry to gain insights into various aspects that will be detailed below.
 
+Data Source - .CSV file: https://www.kaggle.com/datasets/pandeyg0811/australian-flight-dataset-2003-2022
+
+Ethical considerations:
+The data used is available in an open platform with open-access. During the development of this code, assistance from an artificial intelligence platform such as Anaconda Assistance has been used. 
+the original data used by Author of "australian-flight-dataset-2003-2022" falls under the specifications: 
+Provenance:
+SOURCES
+The data is collected from https://www.data.gov.au/.
+COLLECTION METHODOLOGY
+The data was well researched for usability purposes with the least cleaning required for EDA, Insights Collections and Trend Analysis.
+License:
+Database Contents License (DbCL) v1.0
+
+### Part1: Reading and Cleaning Data - Developer Sookie
+Data has been pulled into SQLite database (database_path ="sqlite:///C:/Users/sooki/OneDrive/Desktop/Project_3/Flights_Data_Out.sqlite")
+Selection of: Month - "March 2022"; In_Out: "Out" 
+
+### Part 2: Visualisations
+#### 1)Top Airlines Departing from Australia - Developer Patricia De Assis
+![image](https://github.com/sookie22/Project_3/assets/143486132/96393f79-7f19-4356-a6da-794193a903b3)
+#### 2) Popular Destinations by Total Flights - Developer Shenae Pepper
+This static graphic provides an overview of the total number of flights from all airports for each "International_City". This could be used to infer the most popular destinations.
+![image](https://github.com/sookie22/Project_3/assets/143486132/671ae71b-67b6-4090-9fb2-15f90ec08e24)
+#### 3) Total Flights per Route per Airline - Developer Patricia
+![image](https://github.com/sookie22/Project_3/assets/143486132/74ae85ad-16f8-4845-a16f-965eb8607b77)
+#### 4) Airline Routes Distribution - Developer Shenae Pepper
 This interactive sunburst chart provides a dynamic representation of airline routes, allowing users to visually explore and understand the distribution of total flights across different airlines and their respective routes. 
 Hover over different segments of the sunburst to view specific information about airlines and their respective routes.
 Zoom in by clicking on a particular segment to focus on a specific airline or route.
@@ -9,5 +36,19 @@ Understanding the Chart:
 The color intensity represents the total number of flights for each segment.
 Use the legend to identify different airlines.
 Navigate through the hierarchy by clicking on the chart to explore individual routes within airlines.
+#### 5) Average Maximum Seat in Flights Across Australian Cities - Developer Shenae
+![image](https://github.com/sookie22/Project_3/assets/143486132/9065cfa2-bfa9-419a-8b02-1ea2ca910670)
+#### 6) Heatmap of busiest airports - Developer Sookie
+![image](https://github.com/sookie22/Project_3/assets/143486132/c264857a-941b-4c0c-bd2e-e62a398661dd)
+This interactive map provides a visual overview of Australia and its key airports to easily identify the airport that has the highest number of flights during the period observed. 
+#### 7) Top routes filtered by Airways - Developer Sookie
+![image](https://github.com/sookie22/Project_3/assets/143486132/177115f2-bfea-482a-acaf-5699ac9b4007)
+This interactive bar chart will allow you to select the Airline and identify the top 5 routes based on total flights.  
+#### 8) Heatmap of Popular Destinations - Developer Sookie
+![image](https://github.com/sookie22/Project_3/assets/143486132/2967918f-a4ba-4c00-8f82-1d073fe2cac3)
+This interactive map will provide an overview of the most popular destination as a heat map, being the red areas the ones with the highest number of flights. 
+#### 9)Top Airlines based on the amount of Flights - Developer Swapna
+this interactive map allows you to select the Australian City that you would like to start the route, the international city of preferred destination and the preferred airline. As a result, it will provide you the total number of flights and provide you a visualisation of the route on the map.
+![image](https://github.com/sookie22/Project_3/assets/143486132/2b90aa83-34a6-4e94-9f23-057a99170c91)
 
-This project provides a comprehensive overview of flight data, allowing users to explore and derive insights from various perspectives, supported by interactive visualizations and traditional plots.
+
